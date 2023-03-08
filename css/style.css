@@ -1,0 +1,79 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  padding: 0 100px;
+  z-index: 2;
+  transition: 1s;
+  color: white;
+  background-color: plum;
+}
+
+header{
+  display: flex;
+}
+
+header h1{
+  font-size: 4em;
+  line-height: 1em;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+section p{
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 25px;
+}
+
+img{
+  height: 400px;
+  width: auto;
+  border-radius: 15px;
+}
+
+ul li{
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  flex-direction: column;
+  backdrop-filter: blur(3px);
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  flex-wrap: wrap;
+}
+
+video{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  z-index: -1;
+  position: absolute;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
