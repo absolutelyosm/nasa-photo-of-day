@@ -1,12 +1,14 @@
 //Example fetch using pokemonapi.co
 document.querySelector('button').addEventListener('click', getFetch)
+window.onload = getFetch;
 
+const key = 'ggekUVbNrmWc1jK3CK9uDZrVkroFUS4Bf4K55Ywc'
 
 function getFetch(){
   const choice = document.querySelector('input').value
   console.log(choice)
 
-  const url = `https://api.nasa.gov/planetary/apod?api_key=ggekUVbNrmWc1jK3CK9uDZrVkroFUS4Bf4K55Ywc&date=${choice}`
+  const url = `https://api.nasa.gov/planetary/apod?api_key=${key}&date=${choice}`
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
